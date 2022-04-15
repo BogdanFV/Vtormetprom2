@@ -1,0 +1,44 @@
+.shippingCover{
+    margin: 20px 20px;
+    border-radius: 15px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 70%;
+    
+    border: 1px solid #555;
+    box-shadow: 0 0.60833333333333334vw 0.4166666666666667vw rgb(173, 173, 173);
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: white;
+}
+.shippingCover:hover{
+    background-color: rgba(207, 207, 207, 1);
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.mainBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.mainBlock > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.number{
+    font-size: 1.56vw;
+}
+.area > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.52vw;
+}

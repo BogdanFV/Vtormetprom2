@@ -1,0 +1,39 @@
+#content-page.shadow{
+  opacity: 5%;
+}
+.container{
+  width: 100%;
+  padding: 0 10.5208333333333333vw;
+  margin: 0 auto;
+
+  z-index: -1;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.textBlock {
+  color: white;
+}
+
+.textBlock:nth-child(1) {
+  padding-top: 5.5208333333333333vw;
+}
+
+.textBlock:nth-child(2) {
+  padding-top: 0.5208333333333333vw;
+}
+
+.textBlock:nth-child(3) {
+  padding-top: 3.0408333333333333vw;
+}
+
+.textBlock:nth-child(4) {
+  padding-top: 2.0816333333333333vw;
+}
+
+.textBlock:nth-child(5) {
+  padding-top: 2.0816333333333333vw;
+}
+
+.textBlock.list {
+  padding-left: 50px;
+}
