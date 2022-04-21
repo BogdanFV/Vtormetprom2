@@ -1,10 +1,12 @@
 import s from './Header.module.css'
 import {NavLink} from "react-router-dom"
 
+
+
 const Header = () => {
     return (
         <header id="header" className={s.header}>
-            <div id="droppable-menu" className={s.droppableMenu}>
+            <div  className={s.droppableMenu}  >
                 <ul>
                     <li>
                         <a>
@@ -26,10 +28,15 @@ const Header = () => {
                             <span>Контакты</span>
                         </a>
                     </li>
+                    <li>
+                        <a>
+                            <span>О нас</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div className={s.headerInner}>
-                <div id="header-menu__button" className={s.headerMenuButton}>
+                <div id="menu_button" className={s.headerMenuButton} onClick={ () => console.log('Hey!' )}>
                     <div className={`${s.menuBar} ${s.bar1}`}></div>
                     <div className={`${s.menuBar} ${s.bar2}`}></div>
                     <div className={`${s.menuBar} ${s.bar3}`}></div>
@@ -51,6 +58,9 @@ const Header = () => {
                         </li>
                         <li>
                             <NavLink   className={({isActive}) => isActive ? s.active : ''} to="/contacts" >Контакты</NavLink>
+                        </li>
+                        <li>
+                            <NavLink   className={({isActive}) => isActive ? s.active : ''} to="/about" >О нас</NavLink>
                         </li>
                     </ul>
                 </div>

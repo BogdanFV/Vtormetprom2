@@ -1,6 +1,7 @@
 import s from './Shipping.module.css'
 
-const Shipping = (props) => {
+
+const Shipping = (props) => {   
     return (
         <div className={s.shippingCover}>
             <div className={s.number}>
