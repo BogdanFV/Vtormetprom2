@@ -1,0 +1,11 @@
+.shippingsArray{
+    grid-column: 2 / 5;
+}
+.fastSorting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 1.4vw;
+    color: white;
+}

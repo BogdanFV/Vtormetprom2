@@ -180,6 +180,7 @@
 }
 .mainMenu a:hover{
   cursor: pointer;
+  color: rgba(255, 215, 0, 0.7);
   background-color: #555;
 }
 .mainMenu span{

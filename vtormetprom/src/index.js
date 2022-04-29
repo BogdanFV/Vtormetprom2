@@ -1,15 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+
 import './index.css';
-import App from './app' 
-import state from './redux/state';
+import rerenderEntireTree from './render';
+import state from './redux/state'
+import {currentDisplay} from './redux/state'
+import {shippingsNewPage} from './redux/state'
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App appState={state}/>
-  </React.StrictMode>
-);
 
+rerenderEntireTree(state, currentDisplay, shippingsNewPage)
 

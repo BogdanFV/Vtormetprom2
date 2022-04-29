@@ -1,9 +1,16 @@
 import s from './Header.module.css'
 import {NavLink} from "react-router-dom"
+import React from 'react';
 
 
 
 const Header = () => {
+
+    let menuButton = React.createRef();
+
+    let showTheMenu = () => {
+    }
+
     return (
         <header id="header" className={s.header}>
             <div  className={s.droppableMenu}  >
@@ -36,7 +43,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className={s.headerInner}>
-                <div id="menu_button" className={s.headerMenuButton} onClick={ () => console.log('Hey!' )}>
+                <div id="menu_button" className={s.headerMenuButton} onClick={showTheMenu}>
                     <div className={`${s.menuBar} ${s.bar1}`}></div>
                     <div className={`${s.menuBar} ${s.bar2}`}></div>
                     <div className={`${s.menuBar} ${s.bar3}`}></div>
@@ -64,9 +71,11 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <button id="enter" className={s.enter}>
-                    <NavLink  className={({isActive}) => isActive ? s.active : ''} to="/enter" >Войти</NavLink>
-                </button>
+                    <NavLink  className={({isActive}) => isActive ? s.active : ''} to="/enter">
+                        <button id="enter" className={s.enter}>
+                            Войти
+                        </button>
+                    </NavLink>
             </div>
         </header>
     );

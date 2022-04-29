@@ -1,0 +1,14 @@
+.paginationBlock{
+    grid-column: 2/3;
+}
+.page-link{
+    color: black!important;
+}
+.page-link:focus{
+    box-shadow: none!important;
+}
+li.active a{
+    background-color: grey!important;
+    border-color: grey!important;
+    color: white!important;
+}

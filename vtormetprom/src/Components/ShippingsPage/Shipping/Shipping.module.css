@@ -1,5 +1,14 @@
+.shippingBlock{
+    position: relative;
+    height: 8.333vw;
+    margin-bottom: 1.3vw;
+}
+
 .shippingCover{
-    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
     border-radius: 15px;
     padding: 10px 20px;
 
@@ -7,8 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: auto;
-    width: 70%;
+    width: 100%;
     
     border: 1px solid #555;
     box-shadow: 0 0.60833333333333334vw 0.4166666666666667vw rgb(173, 173, 173);
@@ -16,16 +24,17 @@
     background-color: white;
 }
 .shippingCover:hover{
+    top: 5px;
+    left: 5px;
     background-color: rgba(207, 207, 207, 1);
     cursor: pointer;
-    margin-left: 25px;
-    margin-top: 25px;
 }
 .mainBlock{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    font-size: 1vw;
 }
 .mainBlock > div{
     display: flex;
